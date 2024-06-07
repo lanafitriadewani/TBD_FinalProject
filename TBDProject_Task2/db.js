@@ -1,5 +1,6 @@
-const Pool = require('pg').Pool;
+const Pool = require('pg').Pool; // Mengimpor modul pg untuk koneksi PostgreSQL
 
+// Mengkonfigurasi koneksi pool ke PostgreSQL
 const pool = new Pool({
     user: "postgres",
     host: "localhost",
@@ -8,4 +9,4 @@ const pool = new Pool({
     port: 5432,
 });
 
-module.exports = pool;
+module.exports = pool; // Mengekspor pool untuk digunakan di file lain
